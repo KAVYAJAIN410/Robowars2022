@@ -108,11 +108,11 @@ const Navbar = () => {
                   About Us
                 </Link>
               </li>
-              <li className="nav-item text-link">
+              {/* <li className="nav-item text-link">
                 <Link to="/fixture" className="link no-wrap">
                   Matches
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item text-link">
                 <Link to="#faqsection" className="link no-wrap">
                   FAQs
