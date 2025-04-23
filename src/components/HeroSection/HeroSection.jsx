@@ -14,9 +14,11 @@ const HeroSection = () => {
   const threeContainerRef = useRef(null);
   const inView = useInView(threeContainerRef, { once: true });
   const controls = useAnimation();
-  if (inView) {
-    controls.start("visible");
-  }
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [inView, controls]); // Trigger animation when 'inView' becomes true
 
   const handleMatchesClick = () => {
     navigate("/fixture");
@@ -139,9 +141,9 @@ const HeroSection = () => {
           <button className="watch-live" onClick={handleWatchLiveClick}>
             Watch Live
           </button>
-          <button className="matches" onClick={handleMatchesClick}>
+          {/* <button className="matches" onClick={handleMatchesClick}>
             Matches
-          </button>
+          </button> */}
         </div>
       </div>
     </motion.div>
