@@ -30,12 +30,9 @@ const Sponsors = () => {
         animate={controls}
         transition={{ duration: 1 }}
       >
-        <div class="sponsor-image autodesk">
-          <img src={autodesk} alt="" />
-        </div>
-        <div class="sponsor-image altium">
-          <img src={altium} alt="" />
-        </div>
+        <p style={{ fontFamily: "Bebas Neue, sans-serif", fontSize: "70px", marginTop: "90px" }}>COMING SOON</p>
+
+       
       </motion.div>
     </>
   );

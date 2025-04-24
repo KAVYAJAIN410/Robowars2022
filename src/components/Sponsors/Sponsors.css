@@ -5,9 +5,8 @@
   flex-wrap: wrap;
   height: 100px;
 }
-.sponsor-image {
-  width: 500px;
-}
+
+
 @media (max-width: 600px) {
   .sponsersText {
     margin-top: 90px;

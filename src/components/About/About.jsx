@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import "./About.css";
 import logo from "../../assets/robovitics logo.png";
 import AboutImage from "../../assets/AboutImage.jpg";
-import GravLogo from "../../assets/newgravlogo.svg";
+import GravLogo from "../../assets/newgravlogo.png";
 
 export default function AboutUs() {
   const [hoveredCard, setHoveredCard] = useState(null);

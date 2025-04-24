@@ -2,7 +2,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import React, { useEffect, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import robovitics from "../../assets/robovitics logo.png";
-import gravitas from "../../assets/newgravlogo.svg";
+import gravitas from "../../assets/newgravlogo.png";
 import hamburger from "../../assets/hamburger.png";
 import "./Navbar.css";
 
@@ -92,12 +92,13 @@ const Navbar = () => {
             {window.innerWidth < 900 ? <img src={hamburger} alt="" /> : null}
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-            <ul className="navbar-nav me-auto mb-2">
-              <li className="nav-item">
+          <ul className="nav-item">
                 <Link to="#home" className="link">
                   <img src={robovitics} alt="" />
                 </Link>
-              </li>
+              </ul>
+            <ul className="navbar-nav me-auto mb-2" style={{justifyContent:"center"}}>
+             
               <li className="nav-item text-link">
                 <Link to="#hero" className="link no-wrap">
                   Home
@@ -123,12 +124,13 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </li>
-              <li className="nav-item gravitas-logo">
+             
+            </ul>
+            <li className="nav-item gravitas-logo">
                 <Link to="#home" className="link last">
                   <img src={gravitas} alt="" style={{ marginTop: "-25px" }} />
                 </Link>
               </li>
-            </ul>
           </div>
         </div>
       </motion.nav>
