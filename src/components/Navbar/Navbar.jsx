@@ -92,13 +92,12 @@ const Navbar = () => {
             {window.innerWidth < 900 ? <img src={hamburger} alt="" /> : null}
           </button>
           <div className="collapse navbar-collapse" id="navbarCollapse">
-          <ul className="nav-item">
+            <ul className="navbar-nav me-auto mb-2" style={{justifyContent:"center"}}>
+              <li className="nav-item">
                 <Link to="#home" className="link">
                   <img src={robovitics} alt="" />
                 </Link>
-              </ul>
-            <ul className="navbar-nav me-auto mb-2" style={{justifyContent:"center"}}>
-             
+              </li>
               <li className="nav-item text-link">
                 <Link to="#hero" className="link no-wrap">
                   Home
@@ -124,13 +123,14 @@ const Navbar = () => {
                   Contact Us
                 </Link>
               </li>
-             
-            </ul>
-            <li className="nav-item gravitas-logo">
+              <li className="nav-item gravitas-logo">
                 <Link to="#home" className="link last">
                   <img src={gravitas} alt="" style={{ marginTop: "-25px" }} />
                 </Link>
               </li>
+             
+            </ul>
+            
           </div>
         </div>
       </motion.nav>
