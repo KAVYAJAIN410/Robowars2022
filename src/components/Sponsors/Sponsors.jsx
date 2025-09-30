@@ -17,8 +17,9 @@ const Sponsors = () => {
   }
   return (
     <>
-      <h2 class="sponsersText"> Sponsors</h2>
 
+      <h2 class="sponsersText"> Sponsors</h2>
+<div className="tw-mt-24">
       <motion.div
         class="sponsors-section"
         ref={ref}
@@ -30,10 +31,14 @@ const Sponsors = () => {
         animate={controls}
         transition={{ duration: 1 }}
       >
-        <p style={{ fontFamily: "Bebas Neue, sans-serif", fontSize: "70px", marginTop: "90px" }}>COMING SOON</p>
-
-       
+        <div class="sponsor-image autodesk">
+          <img src="/siemens.svg" alt="" className="tw-w-96" />
+        </div>
+        <div class="sponsor-image altium">
+          <img src="adi.svg" alt=""  className="tw-w-72"/>
+        </div>
       </motion.div>
+      </div>
     </>
   );
 };
